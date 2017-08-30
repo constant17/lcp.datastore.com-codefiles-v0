@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+body{white-space:nowrap;}
+hr{ border-bottom:thin;}
+body, ul, li, input, a{
+	background:#fff;
+	font-size:1em;
+	font-weight:lighter;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+	margin:0;
+	word-wrap:break-word;
+	/*overflow-x: hidden !important;*/
+	}
+.input{
+	width: 98%;
+	height:3.3em;
+	border:solid thin #676565;
+	border-radius:4pt;
+	font-weight:lighter;
+	}
+.search_resultsi{
+	width: 50%;
+	color:#000;
+	text-align:left;
+	font-size:0.7em;
+	display:block;
+	margin:0 auto;
+	}
+.page_content{width:60%; margin-left:13%; margin-right:13%; position:relative; display:block;}
+.wordwrap {  
+   white-space: pre-wrap;      /* Webkit */    
+   white-space: -moz-pre-wrap; /* Firefox */     
+   white-space: -pre-wrap;     /* Opera <7 */    
+   white-space: -o-pre-wrap;   /* Opera 7 */     
+   word-wrap: break-word;      /* IE */ 
+}
+.liv_sim{font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+.b_cont{width: 81%; margin-left:9%; margin-right:9%; margin-top:2%;}
+.book_back{
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #656767); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #656767); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #656767); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #656767); 
+	margin-left:6%;
+	margin-right:6%;
+	padding:4em;
+	border:groove #656767 thin;
+	border-left: solid 10pt #656767;
+	}
+.search_bk{font-size:2em; font-weight:lighter; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+.book_text{
+	margin-top:2%;
+	padding:1em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:1.7em;
+	font-weight:bold;
+	margin-left:0;
+	color:#000;
+    /*-ms-transform: rotate(-18deg); /* IE 9 */
+    /*-webkit-transform: rotate(-18deg); /* Chrome, Safari, Opera */
+    /*transform: rotate(-18deg);*/
+}
+.book_desc{	font-size:1em; color:#fff; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+.header_for_search{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:5.0em;
+	font-weight:lighter;}
+.search_area{
+	width:44%;
+	padding: 1.0em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:1em;
+	font-weight:lighter;
+	font-stretch:condensed;
+	text-align:center;
+	display:inline-block;
+	margin-top:8%;
+	margin-right:26%;
+	margin-left:26%;
+	}
+.search_area_searching_page{
+	width:48%;
+	padding: 0.2em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:1.0em;
+	font-weight:lighter;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	align-self:center;
+	margin-right:24%;
+	margin-left:24%;
+	margin-top:0;
+	word-wrap:break-word;
+	text-wrap:suppress;
+	}
+
+/*.s_rech{width: 50%;}*/
+.header{
+	width:100%;
+	position:fixed;
+	height:4em;
+	top:0;
+	left:0;
+	text-align:justify;
+	background:#A8A6A6;
+	display:block;
+	color:#fff;
+	}
+.searching_page_nav_line{color:#676565;}
+.searching_page_link_type{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:5pt 5pt 0 0;
+	}
+.drop_down_text{ width:100%; border-bottom: solid thin #A2A2A2; border-radius:0 0 10pt 10pt; padding:0.2rem; color:#A2A2A2; display:inherit;}
+input:focus{
+    outline: none;
+}
+.point{
+	cursor:pointer;
+	}
+a{color:inherit;text-decoration:none;}
+#nope_menu{display:none;}
+nav{width:100%; text-align:center;}
+nav select{display:none;}
+nav ul {
+	font-size:1.0em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	color:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:inherit;
+	justify-content:space-around;
+	text-align:center;
+	}
+	
+nav, ul, li{
+	text-decoration:none;
+	display:inline-block;
+	color:#676565;
+	
+	}
+nav ul li a{
+	text-decoration:none;
+	display:block;
+	padding: 0.5rem;
+}
+nav ul li a:hover{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:3pt;
+	}
+
+@media only screen and (max-width: 640px){
+	.wordwrap {  
+	   white-space: pre-wrap;      /* Webkit */    
+	   white-space: -moz-pre-wrap; /* Firefox */     
+	   white-space: -pre-wrap;     /* Opera <7 */    
+	   white-space: -o-pre-wrap;   /* Opera 7 */     
+	   word-wrap: break-word;      /* IE */ 
+	}
+	.page_content{width:70%; margin-left:13%; margin-right:13%; position:relative; display:block;}
+	.search_area{
+	width:80%;
+	padding: 0.5em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:200;
+	text-align:center;
+	display:inline-block;
+	margin-top:20%;
+	margin-right:9%;
+	margin-left:9%;
+	}
+	.search_area_searching_page{
+	width:80%;
+	padding: 0.5em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:lighter;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	align-self:center;
+	margin-right:9%;
+	margin-left:9%;
+	margin-top:0;
+	}
+	
+	.search_resultsi{
+	width: 80%;
+	color:#000;
+	text-align:left;
+	font-size:0.5em;
+	
+	}
+	.input{
+	width: 100%;
+	height:3.3em;
+	border:solid thin #676565;
+	border-radius:10pt;
+	
+	}
+	.drop_down_text{}
+	input:focus{
+    outline: none;
+	}
+	a{color:inherit;text-decoration:none;}
+	ul li a{
+	font-size:1.0em;
+	font-weight:100;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+	}
+	select:focus{outline:none;}
+	option:focus{outline:none;}
+	nav{position: relative;}
+	nav select{display:inline-block; font-size:0.8em;font-weight:100;color:#676565; border-radius:5pt;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;padding:0.2rem;
+	text-align:center; font-weight:lighter;}
+	nav option a{ font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+				font-size:0.8em; text-align:left;}
+	nav option a:hover{background:#676565;}
+	#yep_menu{display:none;}
+	#nope_menu{display:flex; flex:row;}
+	nav ul li a{
+	text-decoration:none;
+	color:#676565;
+	display:block;
+	padding: 0.5rem 0.6rem;
+	background:#fff;
+	}
+	nav ul li a:hover{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:3pt;
+	}
+	nav{width:100%; text-align:center;}
+	nav ul {
+	font-size:0.8em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	background:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:0.2rem;
+	justify-content:space-around;
+	text-align:center;
+	height: auto;
+	}
+
+    nav:not( :target ) a:first-of-type,
+    nav:target a:last-of-type
+    {
+            display: block;
+    }
+    nav:target ul
+    {
+        display: block;
+    }
+ 	nav li ul
+    {
+        position: static;
+    }
+}
+@media only screen and (max-width: 480px) and (max-width: 320px){
+	.search_area{
+	width:80%;
+	padding: 0.5em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:200;
+	text-align:center;
+	display:inline-block;
+	margin-top:20%;
+	margin-right:9%;
+	margin-left:9%;
+	}
+	.search_area_searching_page{
+	width:80%;
+	padding: 0.5em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:lighter;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	align-self:center;
+	margin-right:9%;
+	margin-left:9%;
+	margin-top:0;
+	}
+	.s_rech{width: 80%; text-emphasis:}
+	.search_resultsi{
+	width: 80%;
+	color:#000;
+	text-align:left;
+	font-size:0.5em;
+	margin:0 auto;
+	}
+	.input{
+	width: 100%;
+	height:3.3em;
+	border:solid thin #676565;
+	border-radius:4pt;
+	
+	}
+	.drop_down_text{}
+	input:focus{
+    outline: none;
+	}
+	a{color:inherit;text-decoration:none;}
+	ul li a{
+	font-size:1.0em;
+	font-weight:100;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+	}
+	select:focus{outline:none;}
+	option:focus{outline:none;}
+	nav{position: relative;}
+	nav select{display:inline-block; font-size:0.8em;font-weight:100;color:#676565; border-radius:5pt;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;padding:0.2rem;
+	text-align:center; font-weight:lighter;}
+	nav option a{ font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+				font-size:0.8em; text-align:left;}
+	nav option a:hover{background:#676565;}
+	#yep_menu{display:none;}
+	#nope_menu{display:flex; flex:row;}
+	nav ul li a{
+	text-decoration:none;
+	color:#676565;
+	display:block;
+	padding: 0.5rem 0.6rem;
+	background:#fff;
+	}
+	nav ul li a:hover{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:5pt;
+	}
+	nav{width:100%; text-align:center;}
+	nav ul {
+	font-size:0.8em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	background:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:0.2rem;
+	justify-content:space-around;
+	text-align:center;
+	height: auto;
+	}
+
+    nav:not( :target ) a:first-of-type,
+    nav:target a:last-of-type
+    {
+            display: block;
+    }
+    nav:target ul
+    {
+        display: block;
+    }
+ 	nav li ul
+    {
+        position: static;
+    }
+}
