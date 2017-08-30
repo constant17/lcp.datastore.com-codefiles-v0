@@ -1,0 +1,595 @@
+@charset "utf-8";
+/* CSS Document */
+body{white-space:nowrap;}
+hr{ border-bottom:thin;}
+body, ul, input, a{
+	background:#fff;
+	font-size:1em;
+	font-weight:normal;
+	height:auto;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+	margin:0;
+	word-wrap:break-word;
+	color:#676565;
+	/*overflow-x:hidden !important;*/
+	}
+li{font-weight:normal;}
+button{
+	border:thin solid #656767;
+	}
+h1,h2,h3,h4,h5, h6{font-weight:lighter;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+.b_recherch{height:3.3em; border-radius: 0 10pt 10pt 0; background: #656767; color:#fff; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:ligther;}
+.input{
+	width: 100%;
+	height:3.3em;
+	border:solid thin #676565;
+	border-radius:5pt;
+	font-weight:normal;
+	}
+a{
+    text-decoration:none;
+	color:#676565;
+	font-weight:normal;
+}
+.log_box{
+		display:none;
+		position:fixed;
+		width:100%;
+		height:100%;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:ligther;
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		overflow: auto; /* Enable scroll if needed */
+    	background-color: rgb(0,0,0); /* Fallback color */
+    	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+.log_box_content{
+		background-color: #fefefe;
+		margin: 7em auto; /* 15% from the top and centered */
+		padding:1rem;
+		border: 1px solid #888;
+		width: 40%; /* Could be more or less, depending on screen size */
+		height:auto;
+		text-align:left;
+		border-radius:4pt;
+	}
+.log_bttn{border-radius:2pt; padding:0.5rem; background:#656767; margin:0.7rem;; color:#fff; width:auto; cursor:pointer; float:none;
+		  font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:light;}
+.log_bttn: hover{background:#fff; border:solid thin #656767; border-radius:3pt; color:#656767;}
+.reg_box{
+		display:none;
+		display:none;
+		position:fixed;
+		width:100%;
+		height:100%;
+		border-radius:5pt;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:ligther;
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		padding:2rem;
+		overflow: auto; /* Enable scroll if needed */
+    	background-color: rgb(0,0,0); /* Fallback color */
+    	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */}
+.reg_info{font-size:small;text-align:left; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; 
+		  font-weight:ligther;}
+.close {
+    color: red;
+    float: right;
+	margin:0;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.log_input{
+	width: 100%;
+	height:1.5em;
+	border:solid thin #676565;
+	border-radius:3pt;
+	font-weight:normal;
+	float:right;
+	margin:0;
+	}
+.form_input{
+	width: 100%;
+	height:1.3em;
+	border:solid thin #676565;
+	border-radius:3pt;
+	font-weight:normal;
+	float:right;
+	margin:0;
+	display:flex;
+	padding:5pt;
+	}
+.form_textarea{width: 96%; height:6em; border-radius:3pt; font-weight:normal; border:solid thin #676565; padding:5pt; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; margin:0; resize:none;}
+.form_select{height:1.7em;border:solid thin #676565; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-size:small; 
+	border-radius:3pt; float:right;	font-weight:normal; margin:0 0 0 5%;}
+.search_resultsi{
+	width: 50%;
+	color:#000;
+	text-align:left;
+	font-size:0.7em;
+	display:block;
+	margin:0 auto;
+	}
+.wordwrap {  
+   white-space: pre-wrap;      /* Webkit */    
+   white-space: -moz-pre-wrap; /* Firefox */     
+   white-space: -pre-wrap;     /* Opera <7 */    
+   white-space: -o-pre-wrap;   /* Opera 7 */     
+   word-wrap: break-word;      /* IE */ 
+   
+}
+.bttn{ border-radius:3pt; padding:0.5rem; background:#656767; margin:1em 0 0 0; color:#fff; width:8em; cursor:pointer; float:right;}
+.bttn:hover{ background:#fff; border:solid thin #656767; border-radius:3pt; color:#656767;}
+.input_s{
+	width: 100%;
+	height:3.0em;
+	border:solid thin #676565;
+	border-radius: 10pt 10pt 0 0;
+	font-weight:normal;
+	}
+.header_for_search{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:5.0vw;
+	font-weight:lighter;}
+.header_t{font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:1.5vw;
+	font-weight:normal;}
+.header_m{font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:normal;}
+.search_area{
+	width:44%;
+	padding: 1.0em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:1em;
+	font-weight:normal;
+	font-stretch:condensed;
+	text-align:center;
+	display:inline-block;
+	margin-top:6%;
+	margin-right:26%;
+	margin-left:26%;
+	}
+.form_area{
+	width:50%;
+	padding: 1.0em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:medium;
+	font-weight:normal;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	border:solid thin #DADADA;
+	border-radius:5pt;
+	margin-top:5%;
+	margin-right:23%;
+	margin-left:23%;
+	
+	}
+.search_bk{font-size:2em; font-weight:lighter; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+.search_area_searching_page{
+	width:60%;
+	padding: 0.2em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:1em;
+	font-weight:normal;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	align-self:center;
+	margin-right:19%;
+	margin-left:19%;
+	margin-top:0;
+	word-wrap:break-word;
+	text-wrap:suppress;
+	}
+
+/*.s_rech{width: 50%;}*/
+.header{
+	width:100%;
+	position:fixed;
+	height:4em;
+	top:0;
+	left:0;
+	text-align:justify;
+	background:#A8A6A6;
+	display:block;
+	color:#fff;
+	}
+.searching_page_nav_line{color:#676565;}
+.searching_page_link_type{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:5pt 5pt 0 0;
+	}
+.drop_down_text{ width:100%; border-bottom: solid thin #A2A2A2; border-radius:0 0 4pt 4pt; padding:0.2rem; color:#A2A2A2; display:inherit;}
+input:focus{
+    outline: none;
+}
+.point{
+	cursor:pointer;
+	}
+
+#nope_menu{display:none;}
+nav{width:100%; text-align:center; }
+nav select{display:none;}
+nav ul {
+	font-size:1.0em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	color:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:inherit;
+	justify-content:space-around;
+	text-align:center;
+	border-bottom:thin solid #E1E1E1;
+	}
+	
+nav, ul, li{
+	text-decoration:none;
+	display:inline-block;
+	color:#676565;
+	
+	}
+nav ul li a{
+	text-decoration:none;
+	display:block;
+	padding: 0.5rem;
+	color:#676565;
+}
+nav ul li a:hover{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:3pt;
+	}
+.dropbtn {
+    text-decoration:none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+	text-align:left;
+    position: absolute;
+    min-width: auto;
+	background:#fff;
+    box-shadow: 0pt 6pt 14pt 0pt rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 5pt 8pt;
+    text-decoration: none;
+    display: block;
+	text-align:left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #676565;}
+ 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	box-shadow: 0pt 6pt 14pt 0pt rgba(0,0,0,0.2);
+	
+}
+.footer{border-top:thin solid #EBEBEB; width:96%; height:20%; justify-content:space-around; text-align:left; font-size:smaller; padding:2%;
+	font-weight:normal;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; bottom:-10em; position:absolute;}
+@media only screen and (max-width: 950px)
+{
+	nav ul {
+	font-size:0.8em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	color:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:inherit;
+	justify-content:space-around;
+	text-align:center;
+	}
+}
+@media only screen and (max-width: 640px){
+	.wordwrap {  
+	   white-space: pre-wrap;      /* Webkit */    
+	   white-space: -moz-pre-wrap; /* Firefox */     
+	   white-space: -pre-wrap;     /* Opera <7 */    
+	   white-space: -o-pre-wrap;   /* Opera 7 */     
+	   word-wrap: break-word;      /* IE */ 
+	}
+	.search_area{
+	width:80%;
+	padding: 0.5em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:200;
+	text-align:center;
+	display:inline-block;
+	margin-top:20%;
+	margin-right:9%;
+	margin-left:9%;
+	}
+	.search_area_searching_page{
+	width:80%;
+	padding: 0.5em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:normal;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	align-self:center;
+	margin-right:9%;
+	margin-left:9%;
+	margin-top:0;
+	}
+	
+	.search_resultsi{
+	width: 80%;
+	color:#000;
+	text-align:left;
+	font-size:0.5em;
+	
+	}
+	.input{
+	width: 100%;
+	height:3.3em;
+	border:solid thin #676565;
+	border-radius:10pt;
+	
+	}
+	.drop_down_text{}
+	input:focus{
+    outline: none;
+	}
+	a{color:inherit;text-decoration:none;}
+	ul li a{
+	font-size:1.0em;
+	font-weight:100;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+	}
+	select:focus{outline:none;}
+	option:focus{outline:none;}
+	nav{position: relative;}
+	nav select{display:inline-block; font-size:0.8em;font-weight:100;color:#676565; border-radius:5pt;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;padding:0.2rem;
+	text-align:center; font-weight:lighter;}
+	nav option a{ font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+				font-size:0.8em; text-align:left;}
+	nav option a:hover{background:#676565;}
+	#yep_menu{display:none;}
+	#nope_menu{display:flex; flex:row;}
+	nav ul li a{
+	text-decoration:none;
+	color:#676565;
+	display:block;
+	padding: 0.5rem 0.6rem;
+	background:#fff;
+	}
+	nav ul li a:hover{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:3pt;
+	}
+	nav{width:100%; text-align:center;}
+	nav ul {
+	font-size:0.8em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	background:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:0.2rem;
+	justify-content:space-around;
+	text-align:center;
+	height: auto;
+	}
+
+    nav:not( :target ) a:first-of-type,
+    nav:target a:last-of-type
+    {
+            display: block;
+    }
+    nav:target ul
+    {
+        display: block;
+    }
+ 	nav li ul
+    {
+        position: static;
+    }
+	.log_box{
+			display:none;
+			position:fixed;
+			width:100%;
+			height:100%;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:ligther;
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 0;
+			top: 0;
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+	.log_box_content{
+			background-color: #fefefe;
+			margin: 3em auto; /* 15% from the top and centered */
+			padding: 0.7rem;
+			border: 1px solid #888;
+			width: 40%; /* Could be more or less, depending on screen size */
+			height:auto;
+			text-align:left;
+		}
+	.log_bttn{border-radius:1pt; padding:0.5rem; background:#656767; margin:auto; color:#fff; width:auto; cursor:pointer; float:right;
+			  font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:light;}
+	.log_bttn: hover{background:#fff; border:solid thin #656767; border-radius:3pt; color:#656767;}
+	.reg_box{
+			display:none;
+			display:none;
+			position:fixed;
+			width:100%;
+			height:100%;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; font-weight:ligther;
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 0;
+			top: 0;
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */}
+	.reg_info{font-size:small;text-align:left; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; 
+			  font-weight:ligther;}
+}
+@media only screen and (max-width: 480px) and (max-width: 320px){
+	.search_area{
+	width:80%;
+	padding: 0.5em;
+	align-self:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.7em;
+	font-weight:200;
+	text-align:center;
+	display:inline-block;
+	margin-top:20%;
+	margin-right:9%;
+	margin-left:9%;
+	}
+	
+	
+	.search_area_searching_page{
+	width:80%;
+	padding: 0.2em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.3em;
+	font-weight:normal;
+	font-stretch:condensed;
+	text-align:left;
+	display:inline-block;
+	align-self:center;
+	margin-right:9%;
+	margin-left:9%;
+	margin-top:0;
+	}
+	.bttn{ border-radius:2pt; padding:0.5rem; background:#656767; margin:1em 0 0 0; color:#fff; width:4em; cursor:pointer; float:right;}
+	.bttn:hover{ background:#fff; border:solid thin #656767; border-radius:2pt; color:#656767;}
+	.input_s{
+	width: 100%;
+	height:2.0em;
+	border:solid thin #676565;
+	border-radius: 5pt 5pt 0 0;
+	font-weight:normal;
+	}
+	.s_rech{width: 80%; text-emphasis:}
+	.search_resultsi{
+	width: 80%;
+	color:#000;
+	text-align:left;
+	font-size:0.5em;
+	margin:0 auto;
+	}
+	.input{
+	width: 100%;
+	height:2.0em;
+	border:solid thin #676565;
+	border-radius:5pt;
+	
+	}
+	.drop_down_text{}
+	input:focus{
+    outline: none;
+	}
+	a{color:inherit;text-decoration:none;}
+	ul li a{
+	font-size:1.0em;
+	font-weight:100;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+	}
+	select:focus{outline:none;}
+	option:focus{outline:none;}
+	nav{position: relative;}
+	nav select{display:inline-block; font-size:0.8em;font-weight:100;color:#676565; border-radius:5pt;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;padding:0.2rem;
+	text-align:center; font-weight:lighter;}
+	nav option a{ font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+				font-size:0.8em; text-align:left;}
+	nav option a:hover{background:#676565;}
+	#yep_menu{display:none;}
+	#nope_menu{display:flex; flex:row;}
+	nav ul li a{
+	text-decoration:none;
+	color:#676565;
+	display:block;
+	padding: 0.5rem 0.6rem;
+	background:#fff;
+	}
+	nav ul li a:hover{
+	color:#fff;	
+	text-decoration:none;
+	background:#676565;
+	border-radius:5pt;
+	}
+	nav{width:100%; text-align:center;}
+	nav ul {
+	font-size:0.8em;
+	display:flex;
+	flex-direction:row;
+	list-style-type:none;
+	background:#fff;
+	/*margin:0 2em 2em 0 auto;*/
+	padding:0.2rem;
+	justify-content:space-around;
+	text-align:center;
+	height: auto;
+	}
+
+    nav:not( :target ) a:first-of-type,
+    nav:target a:last-of-type
+    {
+            display: block;
+    }
+    nav:target ul
+    {
+        display: block;
+    }
+ 	nav li ul
+    {
+        position: static;
+    }
+}
