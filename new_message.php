@@ -1,0 +1,1 @@
+<div class="row vertical-center-row"><input type="text" class="form-control" id="usr" placeholder="Destinataire(Numero de telephone ou Nom)"> <input type="text" class="form-control" id="usr" placeholder="Sujet"> <textarea class="form-control" rows="5" id="comment" placeholder="Message..."></textarea></div>
